@@ -31,7 +31,7 @@
     "build": "npm run build:js && npm run test",
     "lint": "tslint -p tsconfig.json",
     "prepare": "npm run build",
-    "prepack": "npm run build:js",
+    "postinstall": "npm run build:js",
     "prepublishOnly": "npm test && npm run lint",
     "preversion": "npm run lint",
     "test": "jest --runInBand",
